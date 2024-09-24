@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,18 +16,17 @@
         less?
       </p>
       <div>
-        <input type="number" id="guess" min="1" max="99" />
+        <label for="guess">Enter your guess:</label>
+        <input type="number" id="guess" min="1" max="99" aria-label="Guess a number between 1 and 99" />
         <button id="submit">Submit Guess</button>
       </div>
-      <div>
+      <div id="messages">
         <p class="message" id="number-of-guesses"></p>
         <p class="message" id="too-high">You guessed too high. Try again.</p>
         <p class="message" id="too-low">You guessed too low. Try again.</p>
-        <p class="message" id="max-guesses">
-          You reached the max number of guesses
-        </p>
+        <p class="message" id="max-guesses">You reached the max number of guesses.</p>
         <p class="message" id="correct">
-          Congratulations, You guessed correctly! <br />
+          Congratulations, you guessed correctly! <br />
           Would you like to play again?
         </p>
       </div>
@@ -35,3 +35,5 @@
     <script src="index.js"></script>
   </body>
 </html>
+
+
